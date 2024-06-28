@@ -1,0 +1,17 @@
+[package]
+name = "tail-call-with-unwind"
+version = "0.1.0"
+edition = "2021"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+[[bench]]
+name = "benchmark"
+harness = false
+
+[lib]
+name = "mylib"
+
+[features]
+force_use_stack = []
